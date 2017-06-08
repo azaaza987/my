@@ -8,6 +8,7 @@
 </head>
 <body>
 
-This is fail page
+<h1>sorry,login fail </h1>
+<a href="index.jsp">login</a>
 </body>
 </html>

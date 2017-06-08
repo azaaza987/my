@@ -11,7 +11,13 @@
 <h3>user list</h3>
 <a href="add">add user</a><br>
 <c:forEach items="${user }" var="u">
-name:${u.value.name}-sex:${u.value.sex }-age:${u.value.age }-Email:${u.value.email }<br>
+name:<a href="${u.value.name }">${u.value.name}</a>-
+sex:${u.value.sex }-
+age:${u.value.age }-
+Email:${u.value.email }-
+<a href="${u.value.name }/update">update</a>-
+<a href="${u.value.name }/delete">delete</a>
+<br>
 
 </c:forEach>
 
