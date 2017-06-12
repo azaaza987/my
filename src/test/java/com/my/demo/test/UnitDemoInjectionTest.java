@@ -78,7 +78,7 @@ public class UnitDemoInjectionTest {
 	
 	
 	@Test
-	public void closeAll() throws SQLException  {
+	public void testDBConnection() throws SQLException  {
 		String url = configProperty.getJdbc_url();
 		String name = configProperty.getJdbc_username();
 		String pwd = configProperty.getJdbc_password();
