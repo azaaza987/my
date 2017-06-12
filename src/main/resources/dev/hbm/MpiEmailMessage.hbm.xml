@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-11-4 18:44:42 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="com.aig.postsale.comunication.entity.MpiEmailMessage" table="MPI_EmailMessage" schema="dbo" catalog="PostSales">
+        <id name="messageId" type="int">
+            <column name="message_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="mpiMsgTemplate" class="com.aig.postsale.comunication.entity.MpiMsgTemplate" fetch="select">
+            <column name="template_id" />
+        </many-to-one>
+        <property name="emailAddress" type="string">
+            <column name="email_address" length="50"/>
+        </property>
+        <property name="messageValue" type="string">
+            <column name="message_value" length="255"/>
+        </property>
+        <property name="messageContent" type="string">
+            <column name="message_content" length="1024"/>
+        </property>
+        <property name="messageStatus" type="string">
+            <column name="message_status" length="10"/>
+        </property>
+        <property name="resendCount" type="big_decimal">
+            <column name="resend_count" precision="10" />
+        </property>
+        <property name="createdBy" type="string">
+            <column name="created_by" length="20"/>
+        </property>
+        <property name="createdDatetime" type="timestamp">
+            <column name="created_datetime" length="23" />
+        </property>
+        <property name="updatedBy" type="string">
+            <column name="updated_by" length="20"/>
+        </property>
+        <property name="updatedDatetime" type="timestamp">
+            <column name="updated_datetime" length="23" />
+        </property>
+    </class>
+</hibernate-mapping>

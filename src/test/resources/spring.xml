@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+http://www.springframework.org/schema/context 
+http://www.springframework.org/schema/context/spring-context-3.0.xsd
+http://www.springframework.org/schema/task  
+http://www.springframework.org/schema/task/spring-task-3.1.xsd">
+
+	<task:annotation-driven/>
+
+	<!-- 自动扫描dao和service包(自动注入) -->
+	
+	<!-- 
+	<context:component-scan base-package="com.shawn.springmvc.dao.impl,com.shawn.springmvc.service.impl" />
+	 -->
+	 	
+	 
+	<!-- 引入属性文件 方法一 -->
+	<context:property-placeholder location="classpath:/dev/config.properties" />
+	
+	
+	<!-- 引入属性文件 方法2 --> 
+	 <bean id="propertyConfigurer" 
+           class="org.springframework.beans.factory.config.PropertiesFactoryBean"> 
+           <property name="locations"> 
+                <list> 
+                     <value>classpath:/dev/config.properties</value> 
+                </list>
+           </property> 
+      </bean>
+
+	  <bean id = "propertyBean" class="com.testClasses.configProperty.ConfigProperty"/>
+
+	  <bean id = "claimDao" class="com.testClasses.springmvc.dao.impl.ClaimDaoImpl"/>
+	  
+	  <bean id = "helloDao_" class="com.testClasses.springmvc.dao.impl.ClaimDaoImpl"/>
+	  
+	  <bean id = "notexistDao" class="com.testClasses.springmvc.dao.impl.ClaimDaoImpl"/>
+</beans>

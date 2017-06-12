@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-11-4 18:44:42 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="com.aig.postsale.comunication.entity.MpiWechatToken" table="MPI_WechatToken" schema="dbo" catalog="PostSales">
+        <id name="tokenId" type="java.lang.Integer">
+            <column name="token_id" />
+            <generator class="identity" />
+        </id>
+        <property name="accessToken" type="string">
+            <column name="access_token" length="600"/>
+        </property>
+        <property name="createDatetime" type="timestamp">
+            <column name="create_datetime" length="23" />
+        </property>
+        <property name="expireDatetime" type="timestamp">
+            <column name="expire_datetime" length="23" />
+        </property>
+        <property name="createdBy" type="string">
+            <column name="created_by" length="20"/>
+        </property>
+    </class>
+</hibernate-mapping>
