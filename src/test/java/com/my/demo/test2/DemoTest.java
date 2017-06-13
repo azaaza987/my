@@ -44,7 +44,7 @@ public class DemoTest {
 	@Test
 	public void testMethod3() {
 		demo.method3(5);
-		assertEquals(20, demo.tempValue);
+		assertEquals(21, demo.tempValue);
 	}
 
 }
