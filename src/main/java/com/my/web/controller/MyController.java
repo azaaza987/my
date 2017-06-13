@@ -19,10 +19,10 @@ public class MyController {
 	private Map<String,User> users=new HashMap<String,User>();
 	
 	public MyController(){
-		users.put("tom", new User("tom","m","20","aa"));
-		users.put("jerry", new User("jerry","f","20","bb"));
-		users.put("jeson", new User("jeson","m","25","cc"));
-		users.put("jack", new User("jack","m","30","dd"));
+		users.put("Tom", new User("Tom","M","20","Tom@test.com"));
+		users.put("Jerry", new User("Jerry","F","21","Jerry@test.com"));
+		users.put("Jason", new User("Jason","M","25","Jason@test.com"));
+		users.put("Iva", new User("Iva","F","30","Iva@test.com"));
 		
 	}
 	
