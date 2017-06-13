@@ -44,7 +44,7 @@ public class MyController {
 		model.addAttribute("user", users);
 		return "list";
 	}
-	@RequestMapping(value="add",method=RequestMethod.GET)
+	@RequestMapping(value="add",method=RequestMethod.GET) 
 	public String add(Model model){
 		model.addAttribute(new User());
 		return "add";
