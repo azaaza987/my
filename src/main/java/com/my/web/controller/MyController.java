@@ -32,7 +32,7 @@ public class MyController {
 			String password
 			
 			){
-		if (username.equals("admin") && password.equals("admin")){
+		if (username.equals("Admin") && password.equals("Admin")){
 			
 			return "sucess";
 			
