@@ -8,7 +8,7 @@
 <title>List Page</title>
 </head>
 <body>
-<h3>user list</h3>
+<h3>user list here:</h3>
 <a href="add">add user</a><br>
 <c:forEach items="${user }" var="u">
 name:<a href="${u.value.name }">${u.value.name}</a>-
