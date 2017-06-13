@@ -20,7 +20,7 @@ public class Demo {
     }  
     
     public void clear() { // 将结果清零
-//    	tempValue = 100;
+    	tempValue = 100;
 	}
   
 }  
