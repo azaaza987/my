@@ -385,7 +385,9 @@
 				<configuration>
 					<systemPropertyVariables>
 						<!--生成结果存放路径 -->
+						<!-- 
 						<jacoco-agent.destfile>target/jacoco.exec</jacoco-agent.destfile>
+						 -->
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
