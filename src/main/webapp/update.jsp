@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>ADD PAGE</title>
+<title>update user page</title>
 </head>
 <body>
 <h3>update user</h3>

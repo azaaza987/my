@@ -8,13 +8,13 @@
 <title></title>
 </head>
 <body>
-<h2>Hello World!！！  Begin from here     </h2>
+<h2>Hello ， Please login first: </h2>
 
 <h2>Test auto deployment !</h2>
 
 <form action="login">
-	用户名：<input id="username" name="username" type="text"></input><br>
-	密&nbsp;&nbsp;码：<input id="username" name="password" type="password"></input><br>
+	Login Name：<input id="username" name="username" type="text"></input><br>
+	Login Pass：<input id="username" name="password" type="password"></input><br>
 	<input type="submit">
 </form>
 

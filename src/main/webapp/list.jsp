@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>List Page</title>
+<title>User List Page</title>
 </head>
 <body>
 <h3>All user list below:</h3>
