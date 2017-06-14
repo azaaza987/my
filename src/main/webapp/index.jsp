@@ -10,6 +10,8 @@
 <body>
 <h2>Hello ， Please login first: </h2>
 
+<h2>Hello ，Check in code here: </h2>
+
 <h2>Test auto deployment !</h2>
 
 <form action="login">
