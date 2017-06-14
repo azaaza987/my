@@ -28,7 +28,7 @@ public class UnitTestBeanInjection {
     
     // if do not want to use AutoWire, then you can use Resource annotation to find instance default by name
     @Resource
-    private UserService userserviceBean; 
+    private UserService userserviceBean;
     
     
 //    @Autowired
