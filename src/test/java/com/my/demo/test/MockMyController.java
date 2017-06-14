@@ -34,7 +34,7 @@ public class  MockMyController {
     }         
 
     @Test  
-    public void testLogin() {   
+    public void testhello() {   
         try {  
         	request.setParameter("userName", "admin");
         	request.setParameter("password", "2");

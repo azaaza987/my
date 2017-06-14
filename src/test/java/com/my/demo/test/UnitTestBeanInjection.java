@@ -36,12 +36,12 @@ public class UnitTestBeanInjection {
     
     
     @Test  
-    public void test() {  
+    public void testUserService() {  
     	assertNotNull(userserviceBean);
     }  
     
     @Test  
-    public void testAddUser() { 
+    public void testaddUser() { 
     	assertNotNull(userserviceBean);
     	
     	User u = new User();
@@ -53,7 +53,7 @@ public class UnitTestBeanInjection {
     }  
     
     @Test  
-    public void testShowUser() { 
+    public void testshowUser() { 
     	User u = new User();
     	u = userserviceBean0.showUser("Tom");
     	assertNotNull(u);
