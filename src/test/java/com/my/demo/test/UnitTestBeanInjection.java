@@ -58,6 +58,7 @@ public class UnitTestBeanInjection {
     	u = userserviceBean0.showUser("Tom");
     	assertNotNull(u);
     	System.out.println(u.getEmail());
+    	
     }  
 	
 }
