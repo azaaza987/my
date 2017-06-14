@@ -1,2 +1,6 @@
+com\testClasses\configProperty\ConfigProperty.class
+com\testClasses\springmvc\entity\Client.class
 com\my\web\entity\User.class
+com\testClasses\springmvc\dao\impl\ClaimDaoImpl.class
+com\testClasses\springmvc\dao\impl\IClaimDao.class
 com\my\web\controller\MyController.class
