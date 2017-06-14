@@ -45,13 +45,12 @@ public class UnitTestBeanInjection {
 //    	assertNotNull(userserviceBean);
     	
     	System.out.println(userserviceBean.getUserList().size());
-    	assertNotNull(userserviceBean.showUser("JUnit"));
-    	System.out.println(userserviceBean.showUser("JUnit").getName());
+//    	System.out.println(userserviceBean.showUser("JUnit").getName());
     }  
     
     @Test  
-    public void testaddUser(User u) { 
-    	u = new User();
+    public void testaddUser() { 
+    	User u = new User();
     	u.setName("JUnit");
     	userserviceBean.addUser(u);
     	System.out.println(userserviceBean.getUserList().size());
